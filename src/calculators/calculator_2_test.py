@@ -13,6 +13,9 @@ class MockDriverHandler(DriverHandlerInterface):
     def standard_derivation(self, numbers: List[float]) -> float:
         return 3
 
+    def variance(self, numbers: List[float]) -> float:
+        return super().variance(numbers)
+
 
 # Teste de integração entre numpy handler e calculator2
 def test_calculate_integration():

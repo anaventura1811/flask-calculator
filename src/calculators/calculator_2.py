@@ -1,9 +1,10 @@
 from typing import List, Dict
 from flask import request as FlaskRequest
 from src.drivers.interfaces.driver_hdr_interface import DriverHandlerInterface
+from src.calculators.interfaces.calculator_interface import CalculatorInterface
 
 
-class Calculator2:
+class Calculator2(CalculatorInterface):
 
     def __init__(self, driver_handler: DriverHandlerInterface) -> None:
         self.__driver_handler = driver_handler

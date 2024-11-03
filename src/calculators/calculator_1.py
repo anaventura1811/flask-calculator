@@ -1,8 +1,9 @@
 from typing import Dict
 from flask import request as FlaskRequest
+from src.calculators.interfaces.calculator_interface import CalculatorInterface
 
 
-class Calculator1:
+class Calculator1(CalculatorInterface):
 
     def calculate(self, request: FlaskRequest) -> Dict:  # type: ignore
         body = request.json
