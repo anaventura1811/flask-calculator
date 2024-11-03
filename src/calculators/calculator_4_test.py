@@ -21,6 +21,22 @@ def test_calculate():
 def test_calculator_error():
     mock_request = MockRequest(body={"teste": 1})
     calc = Calculator4()
-    with raises(Exception) as infoexecpt:
+    with raises(Exception) as infoexcept:
         calc.calculate(mock_request)
-    assert str(infoexecpt.value) == 'body mal formatado!'
+    assert str(infoexcept.value) == 'body mal formatado!'
+
+
+def test_calculate_error_2():
+    mock_request = MockRequest(body={"numbers": 1})
+    calc = Calculator4()
+    with raises(Exception) as infoexcept:
+        calc.calculate(mock_request)
+    assert str(infoexcept.value) == 'erro no formato do body!'
+
+
+def test_calculate_error_3():
+    mock_request = MockRequest(body={"numbers": []})
+    calc = Calculator4()
+    with raises(Exception) as infoexcept:
+        calc.calculate(mock_request)
+    assert str(infoexcept.value) == 'erro no formato do body!'

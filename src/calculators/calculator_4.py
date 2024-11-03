@@ -16,6 +16,9 @@ class Calculator4(CalculatorInterface):
         if "numbers" not in body:
             raise HttpUnprocessableEntityError('body mal formatado!')
         numbers = body["numbers"]
+        if not isinstance(numbers, List) or (
+              isinstance(numbers, List) and len(numbers) == 0):
+            raise HttpUnprocessableEntityError('erro no formato do body!')
         return numbers
 
     def __average(self, numbers: List[float]) -> float:
