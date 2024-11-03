@@ -7,4 +7,5 @@ class NumpyHandler:
         self.__np = numpy
 
     def standard_derivation(self, numbers: List[float]) -> float:
+        print(numbers)
         return self.__np.std(numbers)

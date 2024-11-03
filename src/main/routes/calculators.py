@@ -10,3 +10,8 @@ def calculator_1():
     calc = Calculator1()
     response = calc.calculate(request)
     return jsonify(response)
+
+
+@calc_route_bp.route('/calculator/2', methods=['POST'])
+def calculator_2():
+    pass
