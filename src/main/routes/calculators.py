@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
-from src.main.factories.calculator_2_factory import calculator2_factory
 from src.main.factories.calculator_1_factory import calculator1_factory
+from src.main.factories.calculator_2_factory import calculator2_factory
 from src.main.factories.calculator_3_factory import calculator3_factory
 
 calc_route_bp = Blueprint("calc_routes", __name__)
