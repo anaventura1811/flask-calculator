@@ -29,7 +29,7 @@ Este projeto foi criado para aprofundar o conhecimento em OOP e em boas prática
 
 O projeto segue uma estrutura organizada e modular, com classes e funções separadas para cada operação, além de uma arquitetura que facilita a extensão do código e a integração de novas funcionalidades. Essa abordagem ajuda a compreender a importância de um código bem estruturado e das boas práticas no desenvolvimento de aplicações.
 
-### Estrutura básica de pastas:
+### Estrutura básica de pastas
 ```bash
 ├── LICENSE
 ├── README.md
