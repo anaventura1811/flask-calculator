@@ -102,14 +102,14 @@ O projeto segue uma estrutura organizada e modular, com classes e funções sepa
     pip install -r requirements.txt
     ```
 
-4. Inicie o servidor:
+4. Inicie o servidor, executando na raiz do projeto o comando abaixo:
     ```bash
-    flask run
+    python3 run.py
     ```
 
-5. Acesse a calculadora no navegador:
+5. Acesse a calculadora pelo Postman (ou Insomnia):
     ```
-    http://127.0.0.1:3000
+    http://127.0.0.1:3000/calculator/1
     ```
 
 ## Licença
